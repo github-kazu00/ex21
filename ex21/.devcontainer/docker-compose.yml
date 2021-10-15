@@ -1,11 +1,12 @@
 version: '3.2'
+
 services:
  python:
-  image: ex21 python:1.0
+  image: ex21/python:1.0
   build: ./python
-  container_ name: 'ex 21_ python'
-  stdin_ open: true
+  container_name: 'ex21_python'
+  stdin_open: true
   tty: true
-  working_ dir: '/tmp/work'
+  working_dir: '/tmp/work'
   volumes:
    - ../python:/tmp/work
